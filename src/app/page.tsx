@@ -1,16 +1,51 @@
 import Link from "next/link";
 import { AnimatedWrapper } from "./animate/animateWrapper";
 import { HoverMotion } from "./animate/hoverMotion";
+import { Card, CardContent } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import { ArrowRight, Building2, GraduationCap, MedalIcon, Users } from "lucide-react";
+import Image from "next/image";
+const anoFundacao = 1949;
+const anoAtual = new Date().getFullYear();
+const anosFundacao = anoAtual - anoFundacao;
 
+const stats = [
+  { value: anosFundacao, suffix: "+", label: "Anos transformando vidas" },
+  { value: 5000, suffix: "+", label: "Jovens capacitados" },
+  { value: 50, suffix: "+", label: "Empresas parceiras" },
+  { value: 100, suffix: "%", label: "Totalmente gratuito" },
+];
+
+const diferenciais = [
+  {
+    icon: <GraduationCap size={24} />,
+    title: "Cursos Profissionalizantes",
+    text: "Formação gratuita para jovens de 14 a 18 anos, preparando-os para o mercado de trabalho.",
+  },
+  {
+    icon: <Building2 size={24} />,
+    title: "Programa Jovem Aprendiz",
+    text: "Inserção de adolescentes no mercado de trabalho com acompanhamento profissional.",
+  },
+  {
+    icon: <Users size={24} />,
+    title: "Conexão Empresa-Jovem",
+    text: "Integração entre jovens talentos e empresas que buscam novos profissionais.",
+  },
+  {
+    icon: <MedalIcon size={24} />,
+    title: "Certificação Reconhecida",
+    text: "Certificados que agregam valor ao currículo e ampliam oportunidades.",
+  },
+];
 export default function Page(){
   return(
       <main className="bg-gray-50">
-  
       <section className="relative min-h-screen flex items-center overflow-hidden">
         <div className="absolute inset-0">
           <Image
-            src="/front/Main/Fotosaladeaula.png"
-            alt="Jovens aprendizes"
+            src="/Fotosaladeaula.png"
+            alt=""
             fill
             priority
             className="object-cover"
@@ -133,27 +168,6 @@ export default function Page(){
       </section>
 
      
-      <section className="relative bg-linear-to-b from-gray-50 to-white py-24">
-        <div className="max-w-7xl mx-auto px-6">
-          <AnimatedWrapper>
-            <div className="flex justify-between items-end mb-12">
-              <h2 className="text-3xl md:text-4xl font-bold">
-                Posts mais recentes
-              </h2>
-
-              <Link href="/Blog">
-                <Button className="bg-blue-600 text-white hover:bg-blue-700">
-                  Ir para o Blog →
-                </Button>
-              </Link>
-            </div>
-          </AnimatedWrapper>
-
-          <AnimatedWrapper className="mt-16">
-            <GetPostsComponents />
-          </AnimatedWrapper>
-        </div>
-      </section>
     </main>
   )
 }
