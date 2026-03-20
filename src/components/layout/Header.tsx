@@ -43,12 +43,12 @@ export const Header = () => {
           </Link>
         </li>
         <li>
-          <Link href="#Sobre" className="hover:text-gray-300 transition">
+          <Link href="#sobre" className="hover:text-gray-300 transition">
             Sobre
           </Link>
         </li>
         <li>
-          <Link href="#Contatos" className="hover:text-gray-300 transition">
+          <Link href="#contato" className="hover:text-gray-300 transition">
             Contato
           </Link>
         </li>
