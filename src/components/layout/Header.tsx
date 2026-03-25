@@ -99,7 +99,7 @@ export const Header = () => {
     </Link>
 
     <Link
-      href="#Sobre"
+      href="#sobre"
       onClick={closeMenu}
       className="hover:text-blue-600 hover:translate-x-2 transition-all duration-200"
     >
@@ -107,7 +107,7 @@ export const Header = () => {
     </Link>
 
     <Link
-      href="#Contatos"
+      href="#contato"
       onClick={closeMenu}
       className="hover:text-blue-600 hover:translate-x-2 transition-all duration-200"
     >

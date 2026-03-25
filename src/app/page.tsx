@@ -55,7 +55,7 @@ export default function Page() {
       <section className="relative min-h-screen flex items-center overflow-hidden">
         <div className="absolute inset-0">
           <Image
-            src="/Fotosaladeaula.png"
+            src="/photo2.jpeg"
             alt=""
             fill
             priority
@@ -72,34 +72,36 @@ export default function Page() {
             </span>
           </div>
 
-          <h1 className="font-extrabold text-4xl sm:text-5xl lg:text-6xl leading-tight mb-6 max-w-4xl">
-            Construindo o futuro dos jovens
+          <h1 className="font-extrabold text-4xl sm:text-5xl lg:text-6xl leading-tight mb-4 max-w-4xl">
+            Bem-vindo à Fundação Mirim de Araçatuba
           </h1>
 
-          <p className="text-lg sm:text-xl text-blue-600 max-w-2xl mb-8 font-semibold">
-            Capacitação profissional gratuita conectando jovens ao mercado.
+          <h2 className="text-xl sm:text-2xl text-blue-600 font-semibold mb-6">
+            Seu futuro começa aqui.
+          </h2>
+
+          <p className="text-lg text-gray-100 max-w-2xl mb-4">
+            A Fundação Mirim de Araçatuba é um espaço de oportunidades,
+            aprendizado e desenvolvimento para adolescentes que desejam se
+            preparar para o futuro.
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-4">
-            <Link href="sobre">
-              <HoverMotion>
-                <Button className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-6 rounded-xl">
-                  Conheça a Fundação
-                  <ArrowRight className="ml-2" size={18} />
-                </Button>
-              </HoverMotion>
-            </Link>
+          <p className="text-md text-gray-200 max-w-2xl mb-8">
+            Aqui, você encontra ações que fortalecem a convivência, a autonomia,
+            a responsabilidade, a cidadania e a preparação para o mundo do
+            trabalho.
+          </p>
 
-            <Link href="">
-              <HoverMotion>
-                <Button
-                  variant="outline"
-                  className="border-white text-blue-400 hover:bg-white hover:text-blue-600 px-6 py-6 rounded-xl"
-                >
-                  Fale Conosco
-                </Button>
-              </HoverMotion>
-            </Link>
+          <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-xl p-4 max-w-2xl">
+            <h3 className="font-semibold text-white mb-2">
+              Educação e Preparação para o Mercado de Trabalho
+            </h3>
+            <p className="text-sm text-gray-200">
+              Curso voltado ao desenvolvimento de habilidades importantes para a
+              vida pessoal e profissional, com temas como comportamento,
+              responsabilidade, comunicação, trabalho em equipe, projeto de vida
+              e preparação para futuras oportunidades.
+            </p>
           </div>
         </AnimatedWrapper>
       </section>
@@ -152,26 +154,6 @@ export default function Page() {
         </div>
       </section>
 
-      <section className="bg-white py-20">
-        <div className="max-w-3xl mx-auto px-6 text-center">
-          <AnimatedWrapper>
-            <Card className="rounded-2xl shadow-lg bg-blue-500">
-              <CardContent className="p-10 flex flex-col gap-6">
-                <h2 className="text-3xl md:text-4xl font-bold text-white">
-                  Faça parte dessa história
-                </h2>
-
-                <Link href="#contato">
-                  <Button className="px-8 py-6 bg-white text-blue-500">
-                    Fale Conosco
-                    <ArrowRight size={16} />
-                  </Button>
-                </Link>
-              </CardContent>
-            </Card>
-          </AnimatedWrapper>
-        </div>
-      </section>
       <Sobre />
       <Contatos />
     </main>
