@@ -125,13 +125,7 @@ export function Sobre() {
             </div>
           </div>
         </AnimatedWrapper>
-        <div className="flex justify-center items-center p-3 ">
-          <HoverMotion>
-            <Link href={"/form"}>
-             <Button className="bg-blue-500 text-4xl p-6">INSCREVA-SE JÁ</Button>
-            </Link>
-          </HoverMotion>
-        </div>
+
       </section>
     </section>
   );

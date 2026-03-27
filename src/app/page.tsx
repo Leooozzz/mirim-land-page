@@ -65,45 +65,62 @@ export default function Page() {
         </div>
 
         <AnimatedWrapper className="relative max-w-6xl mx-auto px-6 py-24 text-white">
-          <div className="inline-flex items-center gap-2 bg-blue-600 backdrop-blur-md border border-white/20 rounded-full px-4 py-2 mb-6">
-            <Users size={18} />
-            <span className="text-sm font-medium">
-              +{anosFundacao} anos impactando Araçatuba
-            </span>
-          </div>
+  <div className="inline-flex items-center gap-2 bg-blue-600 backdrop-blur-md border border-white/20 rounded-full px-4 py-2 mb-6">
+    <Users size={18} />
+    <span className="text-sm font-medium 
+    [text-shadow:0.5px_0.5px_0_rgba(255,255,255,0.6),-0.5px_-0.5px_0_rgba(255,255,255,0.6)]">
+      +{anosFundacao} anos impactando Araçatuba
+    </span>
+  </div>
 
-          <h1 className="font-extrabold text-4xl sm:text-5xl lg:text-6xl leading-tight mb-4 max-w-4xl">
-            Bem-vindo à Fundação Mirim de Araçatuba
-          </h1>
+  <h1 className="font-extrabold text-4xl sm:text-5xl lg:text-6xl leading-tight mb-4 max-w-4xl 
+  [text-shadow:1px_1px_0_rgba(37,99,235,0.5),-1px_-1px_0_rgba(37,99,235,0.5)]">
+    Bem-vindo à Fundação Mirim de Araçatuba
+  </h1>
 
-          <h2 className="text-xl sm:text-2xl text-blue-600 font-semibold mb-6">
-            Seu futuro começa aqui.
-          </h2>
+  <h2 className="text-xl sm:text-2xl text-blue-600 font-semibold mb-6 
+  [text-shadow:0.5px_0.5px_0_rgba(255,255,255,0.6),-0.5px_-0.5px_0_rgba(255,255,255,0.6)]">
+    Seu futuro começa aqui.
+  </h2>
 
-          <p className="text-lg text-gray-100 max-w-2xl mb-4">
-            A Fundação Mirim de Araçatuba é um espaço de oportunidades,
-            aprendizado e desenvolvimento para adolescentes que desejam se
-            preparar para o futuro.
-          </p>
+  <p className="text-lg text-gray-100 max-w-2xl mb-4 
+  [text-shadow:0.5px_0.5px_0_rgba(37,99,235,0.5),-0.5px_-0.5px_0_rgba(37,99,235,0.5)]">
+    A Fundação Mirim de Araçatuba é um espaço de oportunidades,
+    aprendizado e desenvolvimento para adolescentes que desejam se
+    preparar para o futuro.
+  </p>
 
-          <p className="text-md text-gray-200 max-w-2xl mb-8">
-            Aqui, você encontra ações que fortalecem a convivência, a autonomia,
-            a responsabilidade, a cidadania e a preparação para o mundo do
-            trabalho.
-          </p>
+  <p className="text-md text-gray-200 max-w-2xl mb-8 
+  [text-shadow:0.5px_0.5px_0_rgba(37,99,235,0.5),-0.5px_-0.5px_0_rgba(37,99,235,0.5)]">
+    Aqui, você encontra ações que fortalecem a convivência, a autonomia,
+    a responsabilidade, a cidadania e a preparação para o mundo do
+    trabalho.
+  </p>
 
-          <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-xl p-4 max-w-2xl">
-            <h3 className="font-semibold text-white mb-2">
-              Educação e Preparação para o Mercado de Trabalho
-            </h3>
-            <p className="text-sm text-gray-200">
-              Curso voltado ao desenvolvimento de habilidades importantes para a
-              vida pessoal e profissional, com temas como comportamento,
-              responsabilidade, comunicação, trabalho em equipe, projeto de vida
-              e preparação para futuras oportunidades.
-            </p>
-          </div>
-        </AnimatedWrapper>
+  <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-xl p-4 max-w-2xl">
+    <h3 className="font-semibold text-white mb-2 
+    [text-shadow:0.5px_0.5px_0_rgba(37,99,235,0.5),-0.5px_-0.5px_0_rgba(37,99,235,0.5)]">
+      Educação e Preparação para o Mercado de Trabalho
+    </h3>
+
+    <p className="text-sm text-gray-200 
+    [text-shadow:0.5px_0.5px_0_rgba(37,99,235,0.5),-0.5px_-0.5px_0_rgba(37,99,235,0.5)]">
+      Curso voltado ao desenvolvimento de habilidades importantes para a
+      vida pessoal e profissional, com temas como comportamento,
+      responsabilidade, comunicação, trabalho em equipe, projeto de vida
+      e preparação para futuras oportunidades.
+    </p>
+  </div>
+
+  <HoverMotion>
+    <Link href={"/form"}>
+      <Button className="bg-blue-500 text-2xl p-6 mt-5 
+      [text-shadow:0.5px_0.5px_0_rgba(255,255,255,0.6),-0.5px_-0.5px_0_rgba(255,255,255,0.6)]">
+        INSCREVA-SE JÁ
+      </Button>
+    </Link>
+  </HoverMotion>
+</AnimatedWrapper>
       </section>
 
       <section className="relative -mt-16 z-10 px-6 max-w-7xl mx-auto">
